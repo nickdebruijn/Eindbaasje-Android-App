@@ -14,11 +14,11 @@
 		<h1>Pagina één</h1>
 	</div>
 	<div data-role="content">	
-		<ul data-role="listview">
-			<li><a href="#page2">Pagina twee</a></li>
-            <li><a href="#page3">Pagina drie</a></li>
-			<li><a href="#page4">Pagina vier</a></li>
-		</ul>		
+		<div class="item-wrapper">
+        	<h2 class="item-h2">Test</h2>
+            <p>Lorem ipsum</p>
+            
+        </div>	
 	</div>
 	<div data-role="footer">
 		<h4>Paginavoettekst</h4>
@@ -60,6 +60,17 @@
 		<h4>Paginavoettekst</h4>
 	</div>
 </div>
+<style>
+
+.listview li a {
+	Background:#f00;	
+}
+.item-h2 {
+	font-weight:100;
+	color:#f00;
+	}
+
+</style>
 
 </body>
 </html>
