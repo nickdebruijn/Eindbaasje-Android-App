@@ -14,135 +14,36 @@
 </head> 
 <body> 
 
-<div data-role="page" id="page">
-	<div data-role="header">
-		<h1>Pagina één</h1>
-	</div>
-	<div data-role="content" id="content-wrapper">	
-		<div class="item-wrapper right">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper left">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper right">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper left">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>	
-        <div class="item-wrapper right">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper left">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>	
-        <div class="item-wrapper right">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper left">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>	
-        <div class="item-wrapper right">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper left">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>	
-        <div class="item-wrapper right">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper left">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>	
-        <div class="item-wrapper right">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper left">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>	
-        <div class="item-wrapper right">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper left">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>	
-        <div class="item-wrapper right">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper left">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>	
-        <div class="item-wrapper right">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>
-        <div class="item-wrapper left">
-        	<h2 class="item-h2">Test</h2>
-            <p>Lorem ipsum</p>
-            
-        </div>	
-        		
-	</div>
-	<div data-role="footer">
-		<h4>Paginavoettekst</h4>
-	</div>
-</div>
+<div class="main-wrapper">
+	<h1 class="logo-loader">Inspire</h1>
+    <h3 class="lifely-loader">by Lifely</h3>
+    
+    
+    <div class="login-loader">
+    <input type="email" value="username">
+    <input type="email" value="password">
+    </div>
 
-<div data-role="page" id="page2">
-	<div data-role="header">
-		<h1>Pagina twee</h1>
-	</div>
-	<div data-role="content">	
-		Inhoud		
-	</div>
-	<div data-role="footer">
-		<h4>Paginavoettekst</h4>
-	</div>
 </div>
 
 	
-<style>
+<script>
+$(document).ready(function() {
+      $('.logo-loader').css('display', 'none');
+      $('.logo-loader').delay(500).fadeIn(1000);
 
+      $('.lifely-loader').css('display', 'none');
+      $('.lifely-loader').delay(700).fadeIn(1000);
+     
+      $('.login-loader').css('display', 'none');
+      $('.login-loader').delay(1000).fadeIn(1000);
 
-</style>
+      function newpage() {
+          window.location = newLocation;
+      }
+  });
+
+</script>
  
 </body>
 </html>

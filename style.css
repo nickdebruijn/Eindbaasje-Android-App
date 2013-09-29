@@ -7,41 +7,37 @@ body {
 	
 }
 .ui-body-c, .ui-dialog.ui-overlay-c {
-	background:#eaedf1;
-	background-image:none;
+	background: url(images/login/bg.png) top left no-repeat;
 }
 .ui-dialog.ui-overlay-c
 {
-	background:#;
+	background:#f00;
 	background-image:none;
 	}
 
-
-.listview li a {
-	Background:#f00;	
+.logo-loader {
+	text-indent:-99999px;
+	width:715px;
+	height:284px;
+	margin:0 auto;
+	margin-top:10%;
+	background:url(images/login/logo.png) no-repeat;	
 }
-.item-h2 {
-	font-weight:100;
-	color:#00f;
-	}
 
-.item-wrapper {
-	width:400px;
-	padding: 10px;
-	margin:15px 0px 15px 0px;
+.lifely-loader {
+	text-indent:-99999px;
+	width:239px;
+	height:146px;
+	margin:0 auto;
+	margin-top:-80px;	
+	background:url(images/login/bylifely.png) no-repeat;	
+}
+.login-loader {
+	height:auto;
+	width:40%;
+	padding:20px;
 	background:#fff;
-	border-radius:6px;
-		
+	margin:0 auto;
+	margin-top:10%;
+	border-radius:7px;
 }
-.left {
-	float:left;	
-	margin:15px 10px 10px 0;
-}
-.right {
-	float:right;
-	margin:15px 0px 10px 15px;
-}
-#content-wrapper {
-	width:865px;
-	margin:0 auto;	
-}	
