@@ -1,0 +1,47 @@
+/*	Reset & General
+---------------------------------------------------------------------- */
+* { margin: 0px; padding: 0px; font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", sans-serif; font-weight:100;}
+body {
+	width: 100%; 
+	height: 100%;
+	
+}
+.ui-body-c, .ui-dialog.ui-overlay-c {
+	background:#eaedf1;
+	background-image:none;
+}
+.ui-dialog.ui-overlay-c
+{
+	background:#;
+	background-image:none;
+	}
+
+
+.listview li a {
+	Background:#f00;	
+}
+.item-h2 {
+	font-weight:100;
+	color:#f00;
+	}
+
+.item-wrapper {
+	width:400px;
+	padding: 10px;
+	margin:15px 0px 15px 0px;
+	background:#fff;
+	border-radius:6px;
+		
+}
+.left {
+	float:left;	
+	margin:15px 10px 10px 0;
+}
+.right {
+	float:right;
+	margin:15px 0px 10px 15px;
+}
+#content-wrapper {
+	width:865px;
+	margin:0 auto;	
+}	
