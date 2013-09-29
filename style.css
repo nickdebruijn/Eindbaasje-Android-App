@@ -1,6 +1,11 @@
 /*	Reset & General
 ---------------------------------------------------------------------- */
 * { margin: 0px; padding: 0px; font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", sans-serif; font-weight:100;}
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
 body {
 	width: 100%; 
 	height: 100%;
@@ -21,16 +26,20 @@ body {
 	height:284px;
 	margin:0 auto;
 	margin-top:10%;
-	background:url(images/login/logo.png) no-repeat;	
-}
+	background:url(images/login/logo.png) no-repeat;
+	animation: fadein 2s;
+	-webkit-animation: fadein 2s; /* Safari and Chrome */	
 
+}
 .lifely-loader {
 	text-indent:-99999px;
 	width:239px;
 	height:146px;
 	margin:0 auto;
 	margin-top:-80px;	
-	background:url(images/login/bylifely.png) no-repeat;	
+	background:url(images/login/bylifely.png) no-repeat;
+	animation: fadein 5s;
+	-webkit-animation: fadein 5s; /* Safari and Chrome */
 }
 .login-loader {
 	height:auto;
@@ -40,4 +49,37 @@ body {
 	margin:0 auto;
 	margin-top:10%;
 	border-radius:7px;
+}
+
+.fade-in {
+    opacity:0;  
+    -webkit-animation:fadeIn ease-out 1;
+    -moz-animation:fadeIn ease-out 1;
+    animation:fadeIn ease-out 1;
+ 
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+ 
+.fade-in.one {
+-webkit-animation-delay: 0.2s;
+-moz-animation-delay: 0.2s;
+animation-delay: 0.2s;
+}
+ 
+.fade-in.two {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay:0.5s;
+animation-delay: 0.5s;
+}
+ 
+.fade-in.three {
+-webkit-animation-delay: 1.8s;
+-moz-animation-delay: 1.8s;
+animation-delay: 1.8s;
 }
